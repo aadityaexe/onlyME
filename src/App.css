@@ -1,0 +1,26 @@
+/* Custom styles for your application */
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bg-opacity-90 {
+  background-color: rgba(74, 36, 52, 0.9);
+}
+
+.hover\:bg-[#c02723]:hover {
+  background-color: #c02723;
+}
+
+.bg-[#4a2434] {
+  background-color: #4a2434;
+}

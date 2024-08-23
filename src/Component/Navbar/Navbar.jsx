@@ -1,13 +1,11 @@
-import { useState } from "react";
-import { FaBars } from "react-icons/fa"; // Import a menu icon from react-icons
-// import logo from "./Navbar-assets/logo.png";
+import React, { useState } from "react";
+import { FaBars } from "react-icons/fa";
+// import logo from "./Navbar-assets/logo.png"; // Add your logo path
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white bg-opacity-50 backdrop-filter backdrop-blur-lg shadow-lg">
@@ -42,20 +40,13 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white shadow-lg">
           <a
-            href="#HERO"
+            href="#Hero"
             className="block px-4 py-2 text-gray-700 hover:bg-gray-200"
           >
             Home
-          </a>
-          <a
-            href="#About"
-            className="block px-4 py-2 text-gray-700 hover:bg-gray-200"
-          >
-            About
           </a>
           <a
             href="#Slider"
@@ -63,12 +54,11 @@ const Navbar = () => {
           >
             Slider
           </a>
-
           <a
-            href="/services"
+            href="#About"
             className="block px-4 py-2 text-gray-700 hover:bg-gray-200"
           >
-            Services
+            About
           </a>
           <a
             href="/contact"

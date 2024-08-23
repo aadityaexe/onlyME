@@ -1,22 +1,18 @@
-import React from "react";
-import backgroundImage from "./Hero-assets/herobg.png"; // Adjust the path accordingly
+import React, { useState } from "react";
+import backgroundImage from "./Hero-assets/herobg.png";
 
 const Hero = () => {
-  const [copied, setCopied] = React.useState(false);
+  const [copied, setCopied] = useState(false);
 
-  // Function to copy text to clipboard
   const copyToClipboard = () => {
     const copyText = "GrjMFAWy2aH7kCLxdxfmTjotzABxYSkjpmyBFSpgmT7";
     navigator.clipboard
       .writeText(copyText)
       .then(() => {
         setCopied(true);
-        // Reset the copied state after a short delay
         setTimeout(() => setCopied(false), 2000);
       })
-      .catch((error) => {
-        console.error("Failed to copy text: ", error);
-      });
+      .catch((error) => console.error("Failed to copy text: ", error));
   };
 
   return (
@@ -25,12 +21,7 @@ const Hero = () => {
       id="Hero"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <div
-        className="
-          text-left text-white space-y-6 max-w-md ml-10 overflow-hidden
-          sm:ml-0 sm:mb-10 sm:text-center sm:absolute sm:bottom-0
-        "
-      >
+      <div className="text-left text-white space-y-6 max-w-md ml-10 overflow-hidden sm:ml-0 sm:mb-10 sm:text-center sm:absolute sm:bottom-0">
         <h1 className="text-5xl font-bold">$SHELBY</h1>
         <p className="text-lg">
           From the slums of Small Heath to the moon by the Order of Peaky
@@ -46,7 +37,7 @@ const Hero = () => {
                 type="text"
                 value="GrjMFAWy2aH7kCLxdxfmTjotzABxYSkjpmyBFSpgmT7"
                 readOnly
-                className="bg-transparent border-none outline-none text-gray-700 w-55 "
+                className="bg-transparent border-none outline-none text-gray-700 w-55"
               />
             </div>
             <button

@@ -1,7 +1,9 @@
+import React from "react";
 import s10 from "./About-assets/s10.png";
+
 const About = () => {
   return (
-    <section className="bg-gray-100 py-12 ml-5 mr-5 rounded-xl" id="About">
+    <section className="bg-gray-100 py-12 mx-5 rounded-xl" id="About">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
           About Us
@@ -26,7 +28,7 @@ const About = () => {
               on our ability to adapt and innovate. Join us on this journey as
               we continue to push the boundaries of what's possible.
             </p>
-            <button className="bg-red-500 text-white px-6 py-2 rounded-full shadow-md transform hover:scale-105 transition duration-500">
+            <button className="bg-primary text-white px-6 py-2 rounded-full shadow-md transform hover:scale-105 transition duration-500">
               Learn More
             </button>
           </div>
