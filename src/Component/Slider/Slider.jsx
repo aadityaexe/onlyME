@@ -24,7 +24,7 @@ const Slidera = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center py-10 bg-gray-100">
+    <div className="flex flex-col items-center py-10 bg-gray-100" id="Slider">
       <h2 className="text-2xl font-bold mb-6">Text Slider</h2>
       <Slider {...settings} className="w-full max-w-4xl">
         {slides.map((text, index) => (

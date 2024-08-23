@@ -22,6 +22,7 @@ const Hero = () => {
   return (
     <div
       className="relative flex items-center justify-start h-screen bg-cover bg-center overflow-hidden"
+      id="Hero"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div
