@@ -3,7 +3,6 @@ import About from "./Component/About/About";
 import Hero from "./Component/Hero/Hero";
 import Navbar from "./Component/Navbar/Navbar";
 import Slidera from "./Component/Slider/Slider";
-import Test from "./Test";
 
 function App() {
   return (
@@ -14,9 +13,6 @@ function App() {
         <Slidera />
       </div>
       <About />
-      <div className="flex justify-center items-center h-screen bg-gray-100 p-6">
-        <Test />
-      </div>
     </>
   );
 }
